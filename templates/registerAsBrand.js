@@ -5,7 +5,7 @@ export const regAsBrandForm = (
   <section class="section" id="section--1">   
   <div class="">
       <h2 class="login__header .section__title">
-        Log In 
+        Register as Brand
       </h2>
       <form class="login__form">
           <label>Brand/ Organisation Name</label>
