@@ -13,9 +13,7 @@ module.exports = {
     filename: 'bundle.js'
   },
   module: {
-    rules: [devServer: {
-  disableHostCheck: true
-}
+    rules: [
       {
       	// for any file with a suffix of js or jsx
         test: /\.jsx?$/,
