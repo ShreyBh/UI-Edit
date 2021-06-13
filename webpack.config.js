@@ -12,9 +12,6 @@ module.exports = {
     // the filename of the JS bundle will be bundle.js
     filename: 'bundle.js'
   },
-  devServer: {
-  disableHostCheck: true
-},
   module: {
     rules: [devServer: {
   disableHostCheck: true
