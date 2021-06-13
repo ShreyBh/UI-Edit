@@ -11,6 +11,9 @@
     "type": "git",
     "url": "git+https://github.com/SourceqwikOrg/UI.git"
   },
+  devServer: {
+  disableHostCheck: true
+},
   "author": "",
   "license": "ISC",
   "bugs": {
