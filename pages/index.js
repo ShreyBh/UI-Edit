@@ -1,11 +1,5 @@
-// import React from "react";
-// import ReactDOM from "react-dom";
-// import { LoginForm } from "../templates/login.js";
-// import { regAsBrandForm } from "../templates/registerAsBrand.js";
-// import { btn } from "../js/login.js";
+function Page(props) {
+  return <div></div>;
+}
 
-// ReactDOM.render(loginForm, document.getElementById("root"));
-
-// btn.addEventListener("click", () => {
-//   ReactDOM.render(regAsBrandForm, document.getElementById("root"));
-// });
+export default Page;
