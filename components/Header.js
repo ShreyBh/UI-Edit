@@ -1,4 +1,4 @@
-import styles from "../styles/Login.module.css";
+import styles from "../styles/Header.module.css";
 function Header() {
   return (
     <header className={styles.header}>
@@ -32,12 +32,18 @@ function Header() {
             </a>
           </li>
           <li className={styles.nav__item}>
-            <a className={`${styles.nav__link}${styles.login_box}`} href="#">
+            <a
+              className={`${styles.nav__link}${styles.login_box}${styles.nav__link__btn}`}
+              href="#"
+            >
               Log In
             </a>
           </li>
           <li className={styles.nav__item}>
-            <a className={styles.nav__link} href="#">
+            <a
+              className={`${styles.nav__link} ${styles.nav__link__btn}`}
+              href="#"
+            >
               #Fight Covid
             </a>
           </li>
