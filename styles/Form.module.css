@@ -60,9 +60,3 @@
   cursor: pointer;
   transition: all 0.3s;
 }
-
-.radio {
-  display: grid;
-  grid-template-columns: min-content auto;
-  grid-gap: 0.5em;
-}

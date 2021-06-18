@@ -15,13 +15,19 @@ function ManufacturerSignup() {
             <label htmlFor="firm">Firm's name</label>
             <input type="text" />
           </p>
-          <p className={styles.form__grp}>
-            <p>Your role at the firm:</p>
-            <input type="radio" id="owner" name="role" value="Owner" />
-            <label htmlFor="owner">Owner</label>
-            <input type="radio" id="other" name="role" value="Other" />
-            <label htmlFor="other">Other</label>
-          </p>
+          <p className={styles.form__grp}>Your role at the firm:</p>
+          <div className={styles.radio}>
+            <ul>
+              <li>
+                <input type="radio" id="owner" name="role" value="Owner" />
+                <label htmlFor="owner">Owner</label>
+              </li>
+              <li>
+                <input type="radio" id="other" name="role" value="Other" />
+                <label htmlFor="other">Other</label>
+              </li>
+            </ul>
+          </div>
           <p className={styles.form__grp}>
             <label>Website Address (if any)</label>
             <input type="text" />
@@ -38,32 +44,37 @@ function ManufacturerSignup() {
             <label>Phone </label>
             <input type="phone" />
           </p>
+
           <p className={styles.form__grp}>
-            <p>Please select your gender:</p>
-            <input type="radio" />
-            <label>Male</label>
-            <input type="radio" />
-            <label>Female</label>
+            What category apparels do you manufacture?{" "}
           </p>
-          <p className={styles.form__grp}>
-            <p></p>
-            <input type="checkbox" />
-            <label>Men's wear</label>
-            <input type="checkbox" />
-            <label>Ladies wear</label>
+          <ul>
+            <li>
+              <input type="checkbox" />
+              <label>Men's wear</label>
+            </li>
+            <li>
+              <input type="checkbox" />
+              <label>Ladies wear</label>
+            </li>
+            <li>
+              <input type="checkbox" />
+              <label>Kid's wear</label>
+            </li>
+            <li>
+              <input type="checkbox" />
+              <label>Home</label>
+            </li>
+            <li>
+              <input type="checkbox" />
+              <label>Accessoories</label>
+            </li>
+            <li>
+              <input type="checkbox" />
+              <label>Others</label>
+            </li>
+          </ul>
 
-            <input type="checkbox" />
-            <label>Kid's wear</label>
-
-            <input type="checkbox" />
-            <label>Home</label>
-
-            <input type="checkbox" />
-            <label>Accessoories</label>
-
-            <input type="checkbox" />
-            <label>Others</label>
-          </p>
           <p className={styles.form__grp}>
             <label>What do you manufacture in above categories?</label>
             <input type="text" />
@@ -72,41 +83,63 @@ function ManufacturerSignup() {
             <label>How many pieces can you make in day? *</label>
             <input type="number" />
           </p>
+          <p className={styles.form__grp}>Are you Sedex certified :</p>
+          <ul>
+            <li>
+              <input type="radio" />
+              <label>Yes</label>
+            </li>
+            <li>
+              <input type="radio" />
+              <label>No</label>
+            </li>
+            <li>
+              <input type="radio" />
+              <label>Maybe</label>
+            </li>
+          </ul>
+
+          <p className={styles.form__grp}>Do you make your own designs</p>
+          <ul>
+            <li>
+              <input type="radio" />
+              <label>Yes</label>
+            </li>
+            <li>
+              <input type="radio" />
+              <label>No</label>
+            </li>
+          </ul>
           <p>
-            <p className={styles.form__grp}>Are you Sedex certified :</p>
-            <input type="radio" />
-            <label>Yes</label>
-            <input type="radio" />
-            <label>No</label>
-            <input type="radio" />
-            <label>Maybe</label>
+            <p className={styles.form__grp}>
+              Do you procure your own raw materials?
+            </p>
+            <ul>
+              <li>
+                <input type="radio" />
+                <label>Yes</label>
+              </li>
+              <li>
+                <input type="radio" />
+                <label>No</label>
+              </li>
+              <li>
+                <input type="radio" />
+                <label>Maybe</label>
+              </li>
+            </ul>
           </p>
-          <p className={styles.form__grp}>
-            <p>Do you make your own designs</p>
-            <input type="radio" />
-            <label>Yes</label>
-
-            <input type="radio" />
-            <label>No</label>
-          </p>
-          <p className={styles.form__grp}>
-            <p>Do you procure your own raw materials?</p>
-            <label>Yes</label>
-
-            <input type="radio" />
-            <label>No</label>
-
-            <input type="radio" />
-            <label>Maybe</label>
-          </p>
-          <p className={styles.form__grp}>
-            <p>Do you have your own QA/QC team?</p>
-            <input type="radio" />
-            <label>Yes</label>
-
-            <input type="radio" />
-            <label>No</label>
-          </p>
+          <p className={styles.form__grp}>Do you have your own QA/QC team?</p>
+          <ul>
+            <li>
+              <input type="radio" />
+              <label>Yes</label>
+            </li>
+            <li>
+              <input type="radio" />
+              <label>No</label>
+            </li>
+          </ul>
           <p className={styles.form__grp}>
             <p>Tell us about some brands you have worked with?</p>
             <textarea id="subject" name="subject"></textarea>
