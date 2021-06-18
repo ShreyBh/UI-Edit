@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 html {
@@ -12,10 +12,10 @@ html {
 body {
   font-family: Raleway;
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 500;
   color: #444;
   line-height: 1.9;
-  background-color: #f3f3f3;
+  background-color: white;
 }
 
 p {
@@ -26,10 +26,6 @@ img {
   transition: filter 0.5s;
 }
 
-button:focus {
-  outline: none;
-}
-
 h1 {
   font-size: 5.5rem;
   line-height: 1.35;
@@ -38,4 +34,68 @@ h1 {
 h4 {
   font-size: 2.4rem;
   font-weight: 500;
+}
+
+input[type="checkbox"] {
+  position: relative;
+  width: 1em;
+  height: 1em;
+  border: 1px solid gray;
+  /* Adjusts the position of the checkboxes on the text baseline */
+  vertical-align: -2px;
+  /* Set here so that Windows' High-Contrast Mode can override */
+  color: green;
+}
+
+input[type="checkbox"]::before {
+  position: absolute;
+  font-size: 1.2em;
+  right: -1px;
+  top: -0.3em;
+  visibility: hidden;
+}
+
+input[type="checkbox"]:checked::before {
+  /* Use `visibility` instead of `display` to avoid recalculating layout */
+  visibility: visible;
+}
+
+input[type="checkbox"]:disabled {
+  border-color: #333;
+  background: #ddd;
+  color: gray;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="phone"],
+input[type="number"] {
+  border: 1px solid #ccc;
+  padding: 0.75rem 0.875rem;
+  border-radius: 2px;
+  outline: 0;
+  color: #333;
+  font-size: 16px;
+  width: 100%;
+  height: 38px;
+  line-height: 1.3;
+}
+
+input[type="submit"] {
+  padding: 0.75rem 1.5rem;
+  margin: 0.5rem 0 0;
+  outline: 0;
+  border: 0;
+  background: #2196f3;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.875rem;
+  letter-spacing: 0.25px;
+  transition: background 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background: lighten(#2196f3, 5%);
 }
