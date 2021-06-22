@@ -1,7 +1,9 @@
 import "../styles/globals.css";
 // import "../styles/globals.css";
-
 import Layout from "../components/Layout";
+import Amplify, { Auth } from 'aws-amplify';
+import awsconfig from '../src/aws-exports';
+Amplify.configure(awsconfig);
 
 function MyApp({ Component, pageProps }) {
   return (

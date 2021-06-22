@@ -2,6 +2,7 @@ import Link from "next/link";
 import LoginAs from "./index";
 import { useRouter } from "next/router";
 import styles from "../../styles/Form.module.css";
+import signIn from "../../components/Signin.js"
 
 function LoginForm() {
   const router = useRouter();
@@ -20,21 +21,27 @@ function LoginForm() {
     registered = "Manufacturer";
   }
 
+  const loginUser = event => {
+    event.preventDefault();
+    let email = event.target.email.value;
+    let password = event.target.password.value;
+    signIn(email, password);
+  }
   return (
     <LoginAs>
       <div className={styles.wrapper}>
         <h2 className={`${styles.form__header}`}>{title}</h2>
-        <form>
+        <form onSubmit={loginUser}>
           <p className={styles.form__grp}>
             <label htmlFor="email">Email Address</label>
-            <input type="email" />
+            <input type="email" name="email" />
           </p>
           <p className={styles.form__grp}>
             <label htmlFor="password">Password</label>
-            <input type="password" />
+            <input type="password" name="password" />
           </p>
           <p className={styles.form__grp}>
-            <button className={styles.btn}>Login</button>
+            <button className={styles.btn} type="submit">Login</button>
           </p>
         </form>
         <p className={styles.form__grp}>Not registered as a {registered}?</p>
