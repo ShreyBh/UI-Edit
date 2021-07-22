@@ -9,16 +9,23 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@aws-amplify/cli": "^5.0.1",
+    "@aws-amplify/cli": "^4.13.2",
+    "@tailwindcss/aspect-ratio": "^0.2.1",
+    "@tailwindcss/forms": "^0.3.3",
     "aws-amplify": "^4.1.1",
     "eslint": "7.28.0",
     "eslint-config-next": "11.0.0",
     "next": "11.0.0",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "tailwindcss-transitions": "^2.2.0"
   },
   "devDependencies": {
+    "autoprefixer": "^10.3.1",
     "eslint": "7.28.0",
-    "eslint-config-next": "11.0.0"
+    "eslint-config-next": "11.0.0",
+    "postcss": "^8.3.5",
+    "tailwindcss": "^2.2.4",
+    "tailwindcss-bg-alpha": "^2.1.0"
   }
 }

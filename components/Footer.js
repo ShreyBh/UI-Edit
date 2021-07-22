@@ -1,31 +1,30 @@
-import styles from "../styles/Footer.module.css";
 
 function Footer() {
   return (
-    <footer className={styles.footer}>
-      <ul className={styles.footer__nav}>
-        <li className={styles.footer__item}>
-          <a className={styles.footer__link} href="#">
+    <footer className = "pt-8 pb-8 left-0 right-0 bottom-0 w-full bg-gray-800 text-center">
+      <ul className = "list-none flex justify-center mb-4"> 
+        <li className = "mr-16">
+          <a className = "text-2xl text-gray-200 no-underline">
             About
           </a>
         </li>
-        <li className={styles.footer__item}>
-          <a className={styles.footer__link} href="#">
+        <li className =  "mr16">-
+          <a className = "text-2xl text-gray-200 no-underline">
             Pricing
           </a>
         </li>
-        <li className={styles.footer__item}>
-          <a className={styles.footer__link} href="#">
+        <li className = "mr-16">
+          <a className = "text-2xl text-gray-200 no-underline">
             Terms of Use
           </a>
         </li>
-        <li className={styles.footer__item}>
-          <a className={styles.footer__link} href="#">
+        <li className = "mr-16">
+          <a className = "text-2xl text-gray-200 no-underline">
             Privacy Policy
           </a>
         </li>
-        <li className={styles.footer__item}>
-          <a className={styles.footer__link} href="#">
+        <li className = "mr-16">
+          <a className = "text-2xl text-gray-200 no-underline">
             Contact Us
           </a>
         </li>
@@ -35,8 +34,8 @@ function Footer() {
         alt="Logo"
         class={styles.footer__logo}
       /> */}
-      <p class={styles.footer__copyright}>
-        SourceQwik © 2021. All rights reserved
+      <p class = "mb-0 text-2xl text-gray-500 text-center">
+        SourceQwik © 2021. All rights reserved 
       </p>
     </footer>
   );

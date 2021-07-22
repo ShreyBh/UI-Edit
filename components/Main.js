@@ -17,7 +17,8 @@ function Main(props) {
         />
         <title>SourceQwik - On-Demand Manufacturing for Fashion Industry</title>
       </head>
-      <body>{props.children}</body>
+      <body class = "font-raleway text-base font-medium text-gray-800 leading-loose bg-white" >{props.children}
+      </body>
     </html>
   );
 }
